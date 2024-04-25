@@ -1,0 +1,278 @@
+<!DOCTYPE Html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"  content="width=device-width, initial-scale=1.0">
+        <title>Expense Tracker</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossorigin="anonymous" />
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    </head>
+    <body>
+
+        <header>
+            <img id="one" src="one.png" height="45" width="45">
+        <h1 id="head" style="color: #3f5abd; font-size: 35px; margin-left: -45px;text-shadow: 1px 1px 2px gray;">CoinWise</h1>
+        <i id="menu" class="fas fa-bars"></i>
+        <div id="list">
+            <p id="innav" class="menunav">INCOME TOTAL</p>
+            <p id="exnav" class="menunav">EXPENSE TOTAL</p>
+
+            <p id="calnav" class="menunav">CALCULATOR</p>
+            <p id="netnav" class="menunav">NET INCOME</p>
+             <p id="netexnav" class="menunav">NET EXPENSE</p>
+             <p class="menunav"><a href="https://alivexem.github.io/Notepad/">BUSINESS NOTE</a></p>
+            <p style="padding-left: 15px; color: orange;" id="refnav" class="menunav">REFRESH</p>
+        </div>
+        <div id="lists">
+            <p id="innavs" class="menunav">INCOME TOTAL</p>
+            <p id="exnavs" class="menunav">EXPENSE TOTAL</p>
+
+            <p id="calnavs" class="menunav">CALCULATOR</p>
+            <p id="netnavs" class="menunav">NET INCOME</p>
+             <p id="netexnavs" class="menunav">NET EXPENSE</p>
+             <p class="menunav"><a href="https://alivexem.github.io/Notepad/">BUSINESS NOTE</a></p>
+            <p style="padding-left: 15px; color: orange;" id="refnavs" class="menunav">REFRESH</p>
+        </div>
+        </header>
+
+        <div class="background"></div>
+        <div class="background2"></div>        
+        <div class="background1"></div>
+
+        <div class="content">
+        <p style=" padding: 0 5px 0 5px; margin-top: 35px; text-align: center;">Ever wondered how to keep the habit of overspending on check? That's right! it is now possible through Coinwise, all you need to do is input and save your income and spending.</p>
+
+        <p style="margin-bottom: 55px; padding: 0 5px 0 5px; margin-top: 35px; text-align: center;">Coinwise automatically calculates your income total, expense total, net income and net expense, displaying targeted warnings to keep your spending habit in check... Happy Financing!</p>
+        </div>
+        <hr>
+      <div class="newStyle">
+      <p class="net6" style="text-align:right; padding-right: 20px;">NET INCOME: <span id="idisplay" style="font-weight:bold;">0</span></p>
+      <p class="net6" style="text-align:right; padding-right: 20px;">NET EXPENSES: <span id="exdisplay" style="font-weight:bold;">0</span></p>
+        </div>
+        <p id="in5" style="text-align:right; padding-right: 20px;">NET INCOME: <span id="idisplay" style="font-weight:bold;">0</span></p>
+        <hr>
+      <div id="myWrap">
+        <div id="earning">
+         <h2>INCOME</h2>
+         <div id="form">
+             <div id="input">
+                 <input id="isource" placeholder="Made from?" type="text">
+                 <input id="iamount" placeholder="Amount Made?" type="number">
+             </div>
+             <div class="date">
+               <select id="day">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  <option value="13">13</option>
+                  <option value="14">14</option>
+                  <option value="15">15</option>
+                  <option value="16">16</option>
+                  <option value="17">17</option>
+                  <option value="18">18</option>
+                  <option value="19">19</option>
+                  <option value="20">20</option>
+                  <option value="21">21</option>
+                  <option value="22">22</option>
+                  <option value="23">23</option>
+                  <option value="24">24</option>
+                  <option value="25">25</option>
+                  <option value="26">26</option>
+                  <option value="27">27</option>
+                  <option value="28">28</option>
+                  <option value="29">29</option>
+                  <option value="30">30</option>
+                  <option value="31">31</option>
+
+              </select>
+              <select id="opt">
+                  <option value="january">January</option>
+                  <option value="february">February</option>
+                  <option value="march">March</option>
+                  <option value="april">April</option>
+                  <option value="may">May</option>
+                  <option value="june">June</option>
+                  <option value="july">July</option>
+                  <option value="august">August</option>
+                  <option value="september">September</option>
+                  <option value="october">October</option>
+                  <option value="november">November</option>
+                  <option value="december">December</option>
+              </select>
+              <select id="optyear">
+                   <option value="2024">2024</option>
+                  <option value="2025">2025</option>
+                  <option value="2026">2026</option>
+                  <option value="2027">2027</option>
+                  <option value="2028">2028</option>
+                  <option value="2029">2029</option>
+                  <option value="2030">2029</option>
+              </select>
+             </div>
+             <p id="isave" style="font-weight:bold; text-align: center; color: green;">SAVED SUCCESSFULY!</p>
+             <div class="shift">
+             <button id="save1">save income</button>
+             </div>
+         </div>
+        </div>
+
+        <br>
+        <br>
+        <hr class="h5">
+        <p id="net5" style="text-align:right; padding-right: 20px;">NET EXPENSES: <span id="exdisplay" style="font-weight:bold;">0</span></p>
+        <hr class="h5">
+        <div id="spending">
+         <h2 id="moveE">EXPENSE</h2>
+         <div id="form2">
+             <div id="input2">
+                 <input id="exsource" placeholder="Spent on?" type="text">
+                 <input id="examount" placeholder="Amount Spent?" type="number">
+             </div>
+
+           <div class="date">
+               <select id="exday">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  <option value="13">13</option>
+                  <option value="14">14</option>
+                  <option value="15">15</option>
+                  <option value="16">16</option>
+                  <option value="17">17</option>
+                  <option value="18">18</option>
+                  <option value="19">19</option>
+                  <option value="20">20</option>
+                  <option value="21">21</option>
+                  <option value="22">22</option>
+                  <option value="23">23</option>
+                  <option value="24">24</option>
+                  <option value="25">25</option>
+                  <option value="26">26</option>
+                  <option value="27">27</option>
+                  <option value="28">28</option>
+                  <option value="29">29</option>
+                  <option value="30">30</option>
+                  <option value="31">31</option>
+
+              </select>
+              <select id="exopt">
+                  <option value="january">January</option>
+                  <option value="february">February</option>
+                  <option value="march">March</option>
+                  <option value="april">April</option>
+                  <option value="may">May</option>
+                  <option value="june">June</option>
+                  <option value="july">July</option>
+                  <option value="august">August</option>
+                  <option value="september">September</option>
+                  <option value="october">October</option>
+                  <option value="november">November</option>
+                  <option value="december">December</option>
+              </select>
+              <select id="exoptyear">
+                   <option value="2024">2024</option>
+                  <option value="2025">2025</option>
+                  <option value="2026">2026</option>
+                  <option value="2027">2027</option>
+                  <option value="2028">2028</option>
+                  <option value="2029">2029</option>
+                  <option value="2030">2029</option>
+              </select>
+             </div>
+             <p id="exsave" style="font-weight:bold; text-align: center; color: green;">SAVED SUCCESSFULY!</p>             
+             <div class="shift">
+             <button id="save2">save expense</button>
+             </div>
+         </div>
+        </div>
+      </div>
+         <br>
+         <br>
+         <div id="navs">
+             <button id="tincome" class="buts">Check income </button>
+             <button id="texpenses" class="buts">Check expenses</button>
+             <i id="icon" class="fas fa-calculator"></i>
+         </div>
+
+         <div style="display: none;" id="incomer" class="conclusion">
+             <h2>INCOME RECORD</h2>
+             <div id="record"></div>
+
+             <div class="total">
+             <input class="green" id="totalin" style="width: 230px; margin-top: 45px;" type="display" value="TOTAL EARNING: 0" disabled>
+             <input class="green" id="netin" style="width: 230px;" type="display" value="NET INCOME: 0" disabled>
+             <p id="income_alert" style="font-weight: bold; color: red;">Your expenses is <span class="loss"></span> more than income!</p>
+             </div>
+
+         </div>
+         </div>
+
+         <div style="display:none;" id="expenser" class="conclusion">
+             <h2>EXPENSE RECORD</h2>
+             <div id="secrecord"></div>
+
+             <div class="total">
+             <input class="red" id="totale" style="width: 230px; margin-top:45px;" type="display" value="TOTAL SPENDING: 0" disabled>
+             <input class="red" id="totex" style="width: 230px;" type="display" value="NET EXPENSES: 0" disabled>
+             <p id="expense_alert" style="font-weight: bold; color: green;">Doing great. You are <span class="wealth"></span> wealthier!</p>             
+             </div>
+
+         </div>
+         </div>
+           <div id="calculator" style="display:none;">
+      <h3 style="font-size: 30px; color: #3d5afe; font-weight: bold; margin-left: 9px;">CoinWise <span style="font-family: monospace; font-size: 20px;">calculator</span></h3>
+
+    <input type="text" id="display" readonly>
+
+    <div class=".buttons">
+      <button class="btn">1</button>
+      <button class="btn">2</button>
+      <button class="btn">3</button>      
+      <button class="btn">4</button>
+      <button class="btn">5</button>
+      <button class="btn">6</button>   
+      <button class="btn">7</button>
+      <button class="btn">8</button>
+      <button class="btn">9</button>
+      <button class="btn">0</button>
+      <button class="btn">+</button>
+      <button class="btn">-</button>
+      <button class="btn">C</button>
+      <button class="btn">*</button>
+      <button class="btn">/</button>
+      <button class="btn">=</button>
+    </div>
+
+  </div>
+    <div id="image" style="display: flex; justify-content: center; flex-direction: column; align-items: center; margin-top: 25px; margin-bottom: 65px;">
+        <img id="bag" src="bag.png" height="290" width="350">
+
+    </div>
+    <footer>
+        <p style="font-family: monospace; color: white; font-size: 14px;"> &copy copyright AlivexemTech 2024; All rights reserved</p>
+    </footer>
+
+        <script src="app.js"></script>
+    </body>
+</html>
