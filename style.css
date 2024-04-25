@@ -11,7 +11,7 @@
   .newStyle{
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: 90%;
     align-items: center;
     padding: 5px 30px 5px 30px;
   }
