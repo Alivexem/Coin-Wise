@@ -43,4 +43,4 @@ To use CoinWise, simply clone or download the repository and open the `index.htm
 CoinWise was created by AlivexemTech as a personal finance project. Contributions and feedback are welcome via GitHub issues and pull requests.
 
 ## Link
-- https://alivexem.github.io/Finance-Tracker/
+- https://coinwise-zeta.vercel.app/
