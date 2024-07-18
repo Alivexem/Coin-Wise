@@ -61,6 +61,13 @@ income_total.addEventListener("click", () => {
     expense_click = false
     icon_click = false
     incomeR.style.display = income_click ? "block" : "none";
+    
+    if(maxWidth.matches){
+      document.getElementById('haps').style.display = 'none'
+    }else{
+      document.getElementById('haps').style.display = 'block'
+    }
+    document.getElementById('sads').style.display = 'none'
     image.style.display = "none";
     calculator.style.display = "none";
     expenseR.style.display = "none";
@@ -68,9 +75,11 @@ income_total.addEventListener("click", () => {
 
     if (!income_click) {
         image.style.display = "flex";
+        document.getElementById('haps').style.display = 'none'
     }
 });
 
+const maxWidth = window.matchMedia('(max-width: 650px)')
 expense_total.addEventListener("click", () => {
     expense_click = !expense_click;
     icon_click = false
@@ -78,11 +87,19 @@ expense_total.addEventListener("click", () => {
     expenseR.style.display = expense_click? "block" : "none";
     image.style.display = "none";
     calculator.style.display = "none";
+    document.getElementById('haps').style.display = 'none'
+    
+    if(maxWidth.matches){
+      document.getElementById('sads').style.display = 'none'
+    }else{
+      document.getElementById('sads').style.display = 'block'
+    }
     incomeR.style.display = "none";
     icon.style.animation = "shake 0.5s ease-in-out infinite"
 
     if (!expense_click) {
         image.style.display = "flex";
+        document.getElementById('sads').style.display = 'none'
     }
 });
 
@@ -94,6 +111,8 @@ icon.addEventListener("click", () => {
     image.style.display = "none";
     incomeR.style.display = "none";
     expenseR.style.display = "none";
+    document.getElementById('sads').style.display = 'none'
+    document.getElementById('haps').style.display = 'none'
     icon.style.animation = "none"
     if (!icon_click) {
         image.style.display = "flex";
@@ -277,6 +296,12 @@ innavs.addEventListener("click",() => {
     window.location.hash = "#totalin"
     total_in.classList.remove("green")
     total_in.classList.add("adjust")
+    if(maxWidth.matches){
+      document.getElementById('haps').style.display = 'none'
+    }else{
+      document.getElementById('haps').style.display = 'block'
+    }
+    document.getElementById('sads').style.display = 'none'
 
     setTimeout(() => {
         total_in.classList.remove("adjust")
@@ -298,6 +323,12 @@ exnavs.addEventListener("click",() => {
 
     total_ex.classList.remove("red")
     total_ex.classList.add("adjust")
+    if(maxWidth.matches){
+      document.getElementById('sads').style.display = 'none'
+    }else{
+      document.getElementById('sads').style.display = 'block'
+    }
+    document.getElementById('haps').style.display = 'none'
 
     setTimeout(() => {
         total_ex.classList.remove("adjust")
@@ -332,7 +363,12 @@ netnavs.addEventListener("click",() => {
     window.location.hash = "#netin"
     net_in.classList.remove("green")
     net_in.classList.add("adjust")
-
+    if(maxWidth.matches){
+      document.getElementById('haps').style.display = 'none'
+    }else{
+      document.getElementById('haps').style.display = 'block'
+    }
+    document.getElementById('sads').style.display = 'none'
     setTimeout(() => {
         net_in.classList.remove("adjust")
         net_in.classList.add("green")
@@ -358,7 +394,12 @@ netexnavs.addEventListener("click",() => {
 
     totex.classList.remove("red")
     totex.classList.add("adjust")
-
+    if(maxWidth.matches){
+      document.getElementById('sads').style.display = 'none'
+    }else{
+      document.getElementById('sads').style.display = 'block'
+    }
+    document.getElementById('haps').style.display = 'none'
     setTimeout(() => {
         totex.classList.remove("adjust")
         totex.classList.add("red")

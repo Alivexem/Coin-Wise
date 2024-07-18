@@ -1,9 +1,18 @@
 @media screen and (min-width: 650px) {
   body {
-    background-color: #F0FBF5;
+    background-color: hsl(0, 20%, 99%);
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden !important;
     overflow-y: scroll;
+  }
+  .adjustNow{
+    width: 270px;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
   }
   #net5, #in5, .h5{
     display: none;
@@ -28,8 +37,9 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    width: 95%;
+    width: 100%;
     padding: 12px;
+    margin-bottom: 5px;
   }
 
   p {
@@ -42,7 +52,7 @@
     color: white;
     border: none;
     border-radius: 5px;
-    height: 50px;
+    height: 40x;
     width: 115px;
     padding: 7px;
     font-size: 15px;
@@ -52,8 +62,8 @@
   input {
     border: 1px solid black;
     height: 20px;
-    font-size: 15px;
-    width: 80px;
+    font-size: 14px;
+    width: 130px;
     padding: 7px;
     border-radius: 5px;
     margin-bottom: 10px;
@@ -126,17 +136,18 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    margin-top: 25px;
-    margin-bottom: 65px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   .buts {
     width: 135px;
-    height: 55px;
+    height: 40px;
     font-size: 17px;
     font-weight: bold;
     color: white;
     padding: 2px;
+    background-color: gray;
   }
 
   .buts:active {
@@ -148,7 +159,7 @@
     border: 1px solid gray;
     border-radius: 6px;
     padding: 10px;
-    width: 350px;
+    width: 500px;
     margin: 5px 5px 25px 5px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8);
   }
@@ -158,12 +169,13 @@
     align-items: center;
     margin: -10px -10px 0 -10px;
     justify-content: space-around;
-    background-color: #d3ffe0;
+    background-color: #020202;
     height: 100px;
     border-width: 0 0 5px 0;
     border-style: solid;
     border-color: black;
   }
+  
 
   #menu {
     display:none;
@@ -180,29 +192,34 @@
     font-size: 55px;
     font-weight: bold;
   }
-
+  .menunav{
+     color: white;
+     font-size: 0.6rem;
+  }
   .total {
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     margin-top: 15px;
   }
+  
 
   .conclusion {
     border: 1px solid gray;
     border-radius: 6px;
     padding: 10px;
-    margin: 5px 5px 95px 5px;
+    width: 550px;
+    margin: 25px 5px 95px 55px;
     display: inline;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.8);
   }
 
   footer {
-    background-color: #1a237e;
+    background-color: #050505;
     color: white;
     font-size: 9px;
-    height: 65px;
-    padding: 10px 20px 20px 20px;
+    height: 45px;
+    padding: 10px 20px 10px 20px;
     margin: 0 -10px -10px -10px;
     text-align: center;
   }
@@ -227,18 +244,19 @@
     justify-content: space-evenly;
     color: black;
     font-size: 9px;
+    margin-top: 75px;
     align-items: center;
     z-index: 9999;
   }
 
   #lists p {
-    color: black;
+    color: white;
     margin: 5px 5px 33px 5px;
-    font-size: 9px;
+    font-size: 0.7rem;
     font-weight: bold;
   }
   #lists a{
-      color: black;
+      color: rgb(238, 223, 12);
   }
 
 
@@ -270,6 +288,14 @@
   #refnav:active {
     color: lime;
   }
+  #tincome{
+    width: 200px;
+    padding: 2px;
+  }
+  #texpenses{
+    width: 200px;
+    padding: 2px;
+  }
 
   #netexnav:active {
     color: lime;
@@ -294,18 +320,23 @@
   .red {
     border: 1px solid red;
   }
+  button:hover{
+    background-color: #45a049;
+  }
 
   #calculator {
     display: inline;
     height: 350px;
+    width: 600px;
     border: 2px solid gray;
     border-radius: 15px 15px 15px 15px;
     padding: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
     overflow: hidden;
-    margin: 0 5px 80px 5px;
+    margin: 35px 5px 50px 10%;
     background-color: #ccc;
   }
+  
 
   #display {
     width: 92%;
@@ -355,17 +386,40 @@
       75% { transform: translateX(-5px); }
       100% { transform: translateX(0); }
   }
-
+  .mia{
+    margin: 20px 5px 5px 0;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
   #icon {
     display: inline-block;
     animation: shake 0.5s ease-in-out infinite;
   }
-
-
+  #one{
+    margin: 0;
+    padding: 0;
+  }
+  #head{
+    margin: 0;
+    padding: 0;
+    color: whitesmoke;
+  }
 
     .content {
       position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
       z-index: 1; 
+      padding: 5px 5px 5px 0;
+      border-style: solid;
+      border-color: black;
+      border-width: 0 5px 5px 5px;
+      margin-bottom: 25px;
+      width: 100%;
+      
     }
    #bag:active{
      width: 360px;
@@ -379,6 +433,10 @@
   a{
     text-decoration: none;
     color: white;
+  }
+  #innav{
+    color: white;
+    font-size: 0.7rem;
   }
 }
 
@@ -401,6 +459,10 @@
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden !important;
     overflow-y: scroll;
+  }
+  .mia{
+    margin-bottom: 55px; padding: 0 5px 0 5px; margin-top: 35px; text-align: center;
+    text-align: center;
   }
 
   h2 {
@@ -661,6 +723,15 @@
   .red {
     border: 1px solid red;
   }
+  .adjustNow{
+    width: 70%;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+  }
 
   #calculator {
     display: inline;
@@ -713,6 +784,12 @@
   button:active {
     background-color: #45a049;
   }
+  #sads{
+    display: none;
+  }
+  #haps{
+    display: none;
+  }
 
 
   @keyframes shake {
@@ -727,7 +804,9 @@
     display: inline-block;
     animation: shake 0.5s ease-in-out infinite;
   }
-
+  h1{
+    color: #3f5abd;
+  }
   .background {
         background-color: #e0e3ff; 
         position: absolute;
