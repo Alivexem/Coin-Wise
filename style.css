@@ -578,8 +578,8 @@
   }
 
   .buts {
-    width: 135px;
-    height: 40px;
+    width: 140px;
+    height: 45px;
     font-size: 14px;
     color: white;
     padding: 7px;
@@ -738,7 +738,7 @@
     border: 1px solid red;
   }
   .adjustNow{
-    width: 80%;
+    width: 72%;
     display: flex;
     padding: 0;
     margin-top: 0;
@@ -862,8 +862,8 @@
       align-items: center;
       z-index: 1; 
       border-radius: 10px;
-      padding: 15px;
-      height: 200px;
+      padding: 7px;
+      height: 150px;
       margin: 15px;
       border: 2px solid black;
     }
