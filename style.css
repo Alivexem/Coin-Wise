@@ -869,7 +869,7 @@
       padding: 7px;
       height: 205px;
       margin: 15px;
-      border: 4px solid #3d5afe;
+      border: 4px solid gray;
     }
    #bag:active{
      width: 360px;
