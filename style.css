@@ -636,7 +636,7 @@
     border: 1px solid gray;
     border-radius: 6px;
     padding: 10px;
-    width: 340px;
+    width: 100%;
     margin: 5px 5px 65px 5px;
     display: inline;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.8);
@@ -697,7 +697,7 @@
     color: lime;
   }
   .newsign{
-    width:90%;
+    width:100%;
   }
   #exnav:active {
     color: lime;
