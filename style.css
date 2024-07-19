@@ -576,11 +576,10 @@
 
   .buts {
     width: 135px;
-    height: 55px;
-    font-size: 17px;
-    font-weight: bold;
+    height: 40px;
+    font-size: 14px;
     color: white;
-    padding: 2px;
+    padding: 7px;
   }
 
   .buts:active {
@@ -602,14 +601,15 @@
     margin: -10px -10px 0 -10px;
     justify-content: space-around;
     background-color: #000000;
-    height: 100px;
+    height: 90px;
+    padding: 5px;
     border-width: 0 0 5px 0;
     border-style: solid;
     border-color: black;
   }
 
   #menu {
-    font-size: 15px;
+    font-size: 17px;
     color: white;
   }
 
@@ -763,7 +763,7 @@
     border: 1px solid gray;
   }
   #one{
-    margin-top: 17px;
+    margin-top: 25px;
   }
   .buttons {
     display: grid;
@@ -816,6 +816,7 @@
   }
   h1{
     color: #ffffff;
+    margin-top: 25px;
   }
   .background {
         background-color: #e0e3ff; 
@@ -854,6 +855,7 @@
       justify-content: center;
       align-items: center;
       z-index: 1; 
+      border-radius: 10px;
       padding: 15px;
       height: 200px;
       margin: 15px;
