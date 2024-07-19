@@ -732,7 +732,7 @@
     border: 1px solid red;
   }
   .adjustNow{
-    width: 70%;
+    width: 80%;
     display: flex;
     padding: 0;
     margin-top: 0;
@@ -763,7 +763,7 @@
     border: 1px solid gray;
   }
   #one{
-    margin-top: 25px;
+    margin-top: 22px;
   }
   .buttons {
     display: grid;
