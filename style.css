@@ -469,8 +469,8 @@
     text-align: center;
     line-height: 1.3;
     text-align: center;
-    font-size: 0.85rem;
-    font-weight: bold;
+    font-size: 0.8rem;
+  
     padding: 7px;
     font-family: monospace;
   }
@@ -869,7 +869,7 @@
       padding: 7px;
       height: 205px;
       margin: 15px;
-      border: 2px solid #3d5afe;
+      border: 4px solid #3d5afe;
     }
    #bag:active{
      width: 360px;
