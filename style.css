@@ -468,7 +468,7 @@
     padding: 0 5px 0 5px;
     text-align: center;
     text-align: center;
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     padding: 7px;
     font-family: monospace;
   }
@@ -863,7 +863,7 @@
       z-index: 1; 
       border-radius: 10px;
       padding: 7px;
-      height: 150px;
+      height: 160px;
       margin: 15px;
       border: 2px solid black;
     }
